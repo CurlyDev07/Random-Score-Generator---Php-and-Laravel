@@ -17,7 +17,7 @@ class ScoreController extends Controller
            $get_score = DB::table('scores')->select('score', 
                 DB::raw('COUNT(score) as count' ),
                 DB::raw('DAY(created_at) as day'),
-                DB::raw('MONTH(created_at) as month'),
+                DB::raw('MONTH(created_at) as month')
             )
             ->groupBy(['score', 'day', 'month'])
             ->orderByRaw("day ASC, score ASC")
