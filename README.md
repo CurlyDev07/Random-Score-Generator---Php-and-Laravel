@@ -1,4 +1,4 @@
-1. Create database with a name of "score_generator"
+1. Copy the (.env.example) and name it .env
 2. Open Terminal and navigate this project and run the following commands
     - composer install
     - php artisan migrate
