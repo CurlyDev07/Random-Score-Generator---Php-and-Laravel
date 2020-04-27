@@ -1,5 +1,6 @@
 1. Create database with a name of "score_generator"
 2. Open Terminal and navigate this project and run the following commands
+    - composer install
     - php artisan migrate
     - php artisan db:seed
     - php artisan serve 
